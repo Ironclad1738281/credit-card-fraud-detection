@@ -73,6 +73,12 @@ Fraud Distribution
 Precision-Recall Curve
 ![PR Curve](images/pr_curve.png)
 
+Feature Importance
+![Feature](images/feature_importance.png)
+
+Confusion Matrix
+![Confusion](images/confusion_matrix_threshold.png)
+
 ---
 
 ## Run Instructions
