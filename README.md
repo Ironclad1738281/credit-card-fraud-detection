@@ -144,8 +144,7 @@ notebooks/fraud_detection.ipynb
 
 ## Conclusion
 
-This project demonstrates how machine learning models can be tuned to prioritize fraud detection performance in highly imbalanced financial datasets.  
-Threshold optimization and proper evaluation metrics significantly improve real-world model usefulness.
+This project demonstrates how machine learning models can be tuned to prioritize fraud detection performance in highly imbalanced financial datasets. Threshold optimization and proper evaluation metrics will significantly improve real-world model usefulness.
 
 ## Future Work
 
