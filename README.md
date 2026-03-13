@@ -65,20 +65,33 @@ Model successfully detects the majority of fraudulent transactions while maintai
 
 ---
 
-## Visualizations
+## 📊 Visualizations
 
-Fraud Distribution
+### Fraud Class Distribution
+Shows extreme class imbalance in the dataset.
+
 ![Fraud Distribution](images/fraud_distribution.png)
 
-Precision-Recall Curve
-![PR Curve](images/pr_curve.png)
+---
 
-Feature Importance
-![Feature](images/feature_importance.png)
+### Precision–Recall Curve
+Evaluates model performance on imbalanced data.
 
-Confusion Matrix
-![Confusion](images/confusion_matrix_threshold.png)
+![Precision Recall Curve](images/pr_curve.png)
 
+---
+
+### Feature Importance (Random Forest)
+Top features contributing to fraud prediction.
+
+![Feature Importance](images/feature_importance.png)
+
+---
+
+### Confusion Matrix (Threshold = 0.3)
+Model performance after threshold tuning.
+
+![Confusion Matrix](images/confusion_matrix_threshold.png)
 ---
 
 ## Run Instructions
