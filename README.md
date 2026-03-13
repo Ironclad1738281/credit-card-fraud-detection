@@ -11,6 +11,24 @@ The focus is on maximizing fraud detection recall while maintaining a low false 
 
 ---
 
+## Tech Stack
+
+* Python
+
+* Pandas — data preprocessing and analysis
+
+* NumPy — numerical computations
+
+* Scikit-learn — machine learning models and evaluation
+
+* Imbalanced-learn (SMOTE) — handling class imbalance
+
+* Matplotlib — data visualization
+
+* Seaborn — statistical visualization
+
+* Jupyter Notebook — experimentation and model development
+
 ## Dataset
 
 * 284,807 total transactions
@@ -25,6 +43,15 @@ Place `creditcard.csv` inside the `data/` directory.
 
 ---
 
+## Project Structure
+
+* data/ → raw dataset  
+* notebooks/ → model development notebook  
+* images/ → saved visualizations  
+* models/ → trained model file  
+* requirements.txt → dependencies  
+* results.md → detailed metrics
+
 ## Methodology
 
 * Train-test split with stratification
@@ -34,6 +61,7 @@ Place `creditcard.csv` inside the `data/` directory.
 
   * Logistic Regression
   * Random Forest Classifier
+
 * Evaluation using:
 
   * Precision / Recall / F1-score
@@ -41,16 +69,19 @@ Place `creditcard.csv` inside the `data/` directory.
   * Precision-Recall Curve
 * Probability threshold tuning for improved fraud detection sensitivity
 
+* Final Random Forest model saved using joblib for future inference.
 ---
 
 ## Results
 
-**Random Forest (Threshold = 0.3)**
+### Model Performance (Random Forest, Threshold: 0.3)
 
-* Fraud Recall: **89%**
-* Fraud Precision: **70%**
-* False Positives: **37**
-* Missed Fraud Cases: **11**
+| Metric | Value |
+|------|------|
+| Recall (Fraud) | 0.89 |
+| Precision (Fraud) | 0.70 |
+| False Positives | 37 |
+| False Negatives | 11 |
 
 Model successfully detects the majority of fraudulent transactions while maintaining a very low false alarm rate.
 
@@ -97,7 +128,7 @@ Model performance after threshold tuning.
 ## Run Instructions
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-card-fraud-detection.git
+git clone https://github.com/Ironclad1738281/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
 pip install -r requirements.txt
 jupyter notebook
@@ -110,6 +141,11 @@ notebooks/fraud_detection.ipynb
 ```
 
 ---
+
+## Conclusion
+
+This project demonstrates how machine learning models can be tuned to prioritize fraud detection performance in highly imbalanced financial datasets.  
+Threshold optimization and proper evaluation metrics significantly improve real-world model usefulness.
 
 ## Future Work
 
